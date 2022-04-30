@@ -1,0 +1,7 @@
+- id: shfmt
+  name: shfmt
+  description: Shell source code formatter (native install)
+  language: system
+  entry: shfmt -w -s
+  types: [shell]
+  stages: [commit, merge-commit, push, manual]
