@@ -5,3 +5,9 @@
   entry: shfmt -w -s
   types: [shell]
   stages: [commit, merge-commit, push, manual]
+- id: shellcheck
+  name: ShellCheck
+  description: Static analysis tool for shell scripts
+  language: system
+  entry: shellcheck
+  types: [shell]
